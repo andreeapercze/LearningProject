@@ -20,7 +20,7 @@ header {
     width: 100;
     margin: 0 auto;
 }
-header h1{
+header h1 {
     font-size: 45px;
     font-weight: 700;
     margin-bottom: 30px;
@@ -40,12 +40,12 @@ input, button {
 #new-task-input {
     flex: 1 1 0%;
     background-color: #dcc9b6;
-    padding-top: 5px;
+    padding-top: 10px;
     padding-right: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     padding-left: 5px;
     border-radius: 10px;
-    margin-right: 10px;
+    margin-right: 15px;
     width: 250px;
     color: grey; 
 
@@ -55,7 +55,9 @@ input, button {
 }
 
 #new-task-submit {
-    color: black;
+    color: #704241;
+    border-radius: 14px;
+    background-color: #dcd4bb;
 
 }
 #new-task-submit:hover {
@@ -82,6 +84,7 @@ main {
     font-size: 25px;
     font-weight: 800;
     margin-bottom: 20px;
+    text-shadow: 0 11px 5px #c4b59d;
 
 }
 div.task {
