@@ -1,0 +1,143 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Libre Baskerville', serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #F0E1D2;
+    color: #FFF9EF;
+}
+
+header {
+    padding-top: 40px;
+    /* padding-left: 25px; */
+    max-width: 800px;
+    width: 100;
+    margin: 0 auto;
+}
+header h1 {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    /* opacity: 80%; */
+    text-shadow: 0 11px 9px #c4b59d;
+}
+#new-task-form {
+    display: flex; 
+}
+input, button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#new-task-input {
+    flex: 1 1 0%;
+    background-color: #dcc9b6;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border-radius: 10px;
+    margin-right: 15px;
+    width: 250px;
+    color: grey; 
+
+}
+#new-task-input::placeholder{
+    color: white;
+}
+
+#new-task-submit {
+    color: #704241;
+    border-radius: 14px;
+    background-color: #dcd4bb;
+
+}
+#new-task-submit:hover {
+    opacity: 80%; 
+}
+#new-task-submit:active {
+    opacity: 60%;
+}
+
+main {
+    flex: 1 1 0%;
+    /* padding-top: 5px; */
+    /* padding-right: 5px; */
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.task-list {
+    padding: 10px;
+}
+
+.task-list h2 {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 0 11px 5px #c4b59d;
+
+}
+div.task {
+    display: flex;
+    justify-content: space-between;
+    background-color: #d4b597;
+    padding: 15px;
+    border-radius:20px;
+    margin-bottom: 20px;
+}
+
+.content {
+    flex: 1 1 0%;
+}
+   
+
+.content .text {
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+}
+.content .text:not(:read-only) {       /* Make text editable */
+    color: white;
+}
+
+.actions {
+    display: flex;
+    margin: 0 -8px; 
+}
+.actions button {
+    cursor: pointer;
+    margin: 0 8px;
+    font-size: 13px;
+    font-weight: 600;
+    /* text-transform: uppercase; */
+    transition: 0.4s;
+}
+.actions button:hover {
+    opacity: 80%;
+}
+.actions button:active {
+    opacity: 60%;
+}
+
+.actions .edit {
+    color: #704241;
+    border-radius: 14px;
+    background-color:#f0ead6; 
+}
+.actions .delete {
+    color: #704241;
+    border-radius: 14px;
+    background-color:#f0ead6; 
+}
